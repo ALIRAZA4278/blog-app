@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(del \"C:\\Users\\af912\\OneDrive\\Desktop\\UNIVERSITY SEM 2\\my-app\\.next\\dev\\lock\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

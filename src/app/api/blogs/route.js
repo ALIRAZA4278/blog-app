@@ -49,7 +49,7 @@ export async function GET(request) {
 export async function POST(request) {
   try {
     await dbConnect();
-    const { title, content, excerpt, category, author, authorName, tags } = await request.json();
+    const { title, content, excerpt, category, author, authorName, tags, coverImage } = await request.json();
 
     if (!title || !content || !author || !authorName) {
       return NextResponse.json(
@@ -66,6 +66,7 @@ export async function POST(request) {
       author,
       authorName,
       tags: tags || [],
+      coverImage: coverImage || '',
     });
 
     return NextResponse.json(blog, { status: 201 });

@@ -34,7 +34,7 @@ export async function PUT(request, { params }) {
   try {
     await dbConnect();
     const { id } = await params;
-    const { title, content, excerpt, category, tags } = await request.json();
+    const { title, content, excerpt, category, tags, coverImage } = await request.json();
 
     const blog = await Blog.findById(id);
 
@@ -50,6 +50,7 @@ export async function PUT(request, { params }) {
     blog.excerpt = excerpt || blog.excerpt;
     blog.category = category || blog.category;
     blog.tags = tags || blog.tags;
+    blog.coverImage = coverImage !== undefined ? coverImage : blog.coverImage;
 
     await blog.save();
 

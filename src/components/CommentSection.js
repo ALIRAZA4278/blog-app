@@ -55,7 +55,7 @@ export default function CommentSection({ blogId }) {
             <div key={comment._id} className="bg-gray-50 rounded-lg p-4">
               <div className="flex items-center justify-between mb-2">
                 <span className="font-medium text-gray-900">{comment.authorName}</span>
-                <span className="text-sm text-gray-500">{formatDate(comment.createdAt)}</span>
+                <span className="text-sm text-gray-700">{formatDate(comment.createdAt)}</span>
               </div>
               <p className="text-gray-700">{comment.content}</p>
             </div>

@@ -87,7 +87,7 @@ export default function ExplorePage() {
         <div className="flex flex-wrap items-center justify-between mb-8">
           <h2 className="text-2xl font-bold text-gray-900">
             {selectedCategory === 'all' ? 'All Blogs' : `${selectedCategory} Blogs`}
-            <span className="text-gray-500 text-lg ml-2">({blogs.length})</span>
+            <span className="text-gray-700 text-lg ml-2">({blogs.length})</span>
           </h2>
           <div className="flex space-x-2 mt-4 md:mt-0">
             <button

@@ -99,11 +99,11 @@ export default function BlogCard({ blog, showBookmark = false }) {
             </div>
             <div>
               <p className="text-sm font-medium text-gray-900">{blog.authorName}</p>
-              <p className="text-xs text-gray-500">{formatDate(blog.createdAt)}</p>
+              <p className="text-xs text-gray-700">{formatDate(blog.createdAt)}</p>
             </div>
           </div>
 
-          <div className="flex items-center space-x-3 text-gray-500 text-sm">
+          <div className="flex items-center space-x-3 text-gray-700 text-sm">
             <div className="flex items-center space-x-1">
               <FiClock size={14} />
               <span>{blog.readingTime || 5} min</span>

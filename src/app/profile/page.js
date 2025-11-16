@@ -101,7 +101,7 @@ export default function ProfilePage() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent text-gray-900"
                   />
                 </div>
 
@@ -115,9 +115,9 @@ export default function ProfilePage() {
                     value={formData.email}
                     onChange={handleChange}
                     disabled
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 cursor-not-allowed"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg bg-gray-50 cursor-not-allowed text-gray-900"
                   />
-                  <p className="text-sm text-gray-500 mt-1">Email cannot be changed</p>
+                  <p className="text-sm text-gray-700 mt-1">Email cannot be changed</p>
                 </div>
 
                 <div>
@@ -131,9 +131,9 @@ export default function ProfilePage() {
                     rows={4}
                     maxLength={200}
                     placeholder="Tell us about yourself..."
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-none text-gray-900"
                   />
-                  <p className="text-sm text-gray-500 mt-1">
+                  <p className="text-sm text-gray-700 mt-1">
                     {formData.bio.length}/200 characters
                   </p>
                 </div>
@@ -159,7 +159,7 @@ export default function ProfilePage() {
                   <div className="flex items-center space-x-3 bg-gray-50 p-4 rounded-lg">
                     <FiMail className="text-indigo-600" size={20} />
                     <div>
-                      <p className="text-sm text-gray-500">Email</p>
+                      <p className="text-sm text-gray-700">Email</p>
                       <p className="font-medium text-gray-900">{user.email}</p>
                     </div>
                   </div>
@@ -167,7 +167,7 @@ export default function ProfilePage() {
                   <div className="flex items-center space-x-3 bg-gray-50 p-4 rounded-lg">
                     <FiCalendar className="text-indigo-600" size={20} />
                     <div>
-                      <p className="text-sm text-gray-500">Member Since</p>
+                      <p className="text-sm text-gray-700">Member Since</p>
                       <p className="font-medium text-gray-900">
                         {new Date(user.createdAt).toLocaleDateString('en-US', {
                           year: 'numeric',

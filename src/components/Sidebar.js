@@ -59,7 +59,7 @@ export default function Sidebar({ trendingBlogs = [] }) {
                     <h4 className="text-sm font-medium text-gray-900 group-hover:text-blue-600 transition line-clamp-2">
                       {blog.title}
                     </h4>
-                    <p className="text-xs text-gray-500 mt-1">{blog.views || 0} views</p>
+                    <p className="text-xs text-gray-700 mt-1">{blog.views || 0} views</p>
                   </div>
                 </div>
               </Link>

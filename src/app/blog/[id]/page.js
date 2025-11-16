@@ -174,7 +174,7 @@ export default function BlogPostPage() {
                 </div>
                 <div>
                   <p className="font-semibold text-gray-900">{blog.authorName}</p>
-                  <p className="text-sm text-gray-500">{formatDate(blog.createdAt)}</p>
+                  <p className="text-sm text-gray-700">{formatDate(blog.createdAt)}</p>
                 </div>
               </div>
 

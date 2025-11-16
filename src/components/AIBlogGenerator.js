@@ -288,9 +288,9 @@ export default function AIBlogGenerator({ onGenerateContent, onGenerateTitle, on
                   onChange={(e) => setPrompt(e.target.value)}
                   placeholder="E.g., Benefits of morning exercise, How to start a business, Travel tips for Europe..."
                   rows={4}
-                  className="w-full px-5 py-4 text-lg border-2 border-gray-300 rounded-2xl focus:ring-4 focus:ring-purple-500/20 focus:border-purple-500 transition-all resize-none"
+                  className="w-full px-5 py-4 text-lg border-2 border-gray-300 rounded-2xl focus:ring-4 focus:ring-purple-500/20 focus:border-purple-500 transition-all resize-none text-gray-900"
                 />
-                <p className="text-sm text-gray-500 mt-2">Be specific for better results!</p>
+                <p className="text-sm text-gray-700 mt-2">Be specific for better results!</p>
               </div>
 
               {/* Quick Prompts */}

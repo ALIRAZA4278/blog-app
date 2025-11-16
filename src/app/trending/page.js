@@ -109,7 +109,7 @@ export default function TrendingPage() {
                     <p className="text-gray-600 text-sm mb-4 line-clamp-2">
                       {blog.excerpt || blog.content.replace(/<[^>]*>/g, '').substring(0, 100)}
                     </p>
-                    <div className="flex items-center justify-between text-sm text-gray-500">
+                    <div className="flex items-center justify-between text-sm text-gray-700">
                       <span>{blog.views || 0} views</span>
                       <span>{blog.likes?.length || 0} likes</span>
                     </div>

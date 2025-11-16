@@ -150,7 +150,7 @@ export default function BlogForm({ initialData = null }) {
           onChange={handleChange}
           required
           placeholder="Enter an engaging title for your blog post"
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition text-gray-900"
         />
       </div>
 
@@ -193,7 +193,7 @@ export default function BlogForm({ initialData = null }) {
               <p className="mb-2 text-sm text-gray-600 font-medium">
                 <span className="text-blue-600">Click to upload</span> or drag and drop
               </p>
-              <p className="text-xs text-gray-500">PNG, JPG, GIF up to 5MB</p>
+              <p className="text-xs text-gray-700">PNG, JPG, GIF up to 5MB</p>
             </div>
             <input
               type="file"
@@ -203,7 +203,7 @@ export default function BlogForm({ initialData = null }) {
             />
           </label>
         )}
-        <p className="text-xs text-gray-500 mt-2">Upload a cover image to make your blog stand out</p>
+        <p className="text-xs text-gray-700 mt-2">Upload a cover image to make your blog stand out</p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
@@ -217,7 +217,7 @@ export default function BlogForm({ initialData = null }) {
             value={formData.category}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition text-gray-900"
           >
             {categories.map((cat) => (
               <option key={cat} value={cat}>
@@ -238,9 +238,9 @@ export default function BlogForm({ initialData = null }) {
             value={formData.tags}
             onChange={handleChange}
             placeholder="react, javascript, web development"
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition text-gray-900"
           />
-          <p className="text-xs text-gray-500 mt-1">Separate tags with commas</p>
+          <p className="text-xs text-gray-700 mt-1">Separate tags with commas</p>
         </div>
       </div>
 
@@ -255,9 +255,9 @@ export default function BlogForm({ initialData = null }) {
           onChange={handleChange}
           rows={3}
           placeholder="Brief description of your blog (auto-generated if left empty)"
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition resize-none"
+          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition resize-none text-gray-900"
         />
-        <p className="text-xs text-gray-500 mt-1">Maximum 160 characters recommended</p>
+        <p className="text-xs text-gray-700 mt-1">Maximum 160 characters recommended</p>
       </div>
 
       <div>

@@ -136,7 +136,7 @@ export default function MyBlogsPage() {
           <>
             <div className="mb-8">
               <h2 className="text-2xl font-bold text-gray-900">
-                Your Articles <span className="text-gray-500">({blogs.length})</span>
+                Your Articles <span className="text-gray-700">({blogs.length})</span>
               </h2>
             </div>
             <BlogList blogs={blogs} />

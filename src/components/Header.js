@@ -107,21 +107,21 @@ export default function Header() {
                       </div>
                       <Link
                         href="/profile"
-                        className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-50 transition"
+                        className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-50 transition text-black"
                       >
                         <FiUser />
                         <span>My Profile</span>
                       </Link>
                       <Link
                         href="/my-blogs"
-                        className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-50 transition"
+                        className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-50 transition text-black"
                       >
                         <FiEdit />
                         <span>My Blogs</span>
                       </Link>
                       <Link
                         href="/bookmarks"
-                        className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-50 transition"
+                        className="flex items-center space-x-2 px-4 py-2 hover:bg-gray-50 transition text-black"
                       >
                         <FiBookmark />
                         <span>Bookmarks</span>

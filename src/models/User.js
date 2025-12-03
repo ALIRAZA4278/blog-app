@@ -59,4 +59,3 @@ UserSchema.methods.comparePassword = async function (enteredPassword) {
 };
 
 export default mongoose.models.User || mongoose.model('User', UserSchema);
-// MONGODB_URI=mongodb+srv://aliraza:bloggingapp@blogging.3bmrvcd.mongodb.net/?appName=blogging env.local
